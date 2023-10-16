@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kidz World</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -15,7 +15,7 @@
       </div>
       <div id="cart" class="flex">
         <img src="./assets/cart-icon.png" alt="" />
-        <p>Cart items (<span id="cart-value">0</span>)</p>
+        <p class="">Cart items (<span id="cart-value">0</span>)</p>
       </div>
     </nav>
     <!-- Header section -->
@@ -41,7 +41,7 @@
             <div class="buy flex space-between">
               <p>$7.49</p>
               <div id="book1" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(0)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -59,8 +59,8 @@
             <div class="buy flex space-between">
               <p>$4.59</p>
               <div id="book2" class="button flex space-evenly">
-                <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
+                <h6 onclick="addToCart(1)"> Add </h6>
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@
             <div class="buy flex space-between">
               <p>$6.80</p>
               <div id="book3" class="button flex space-evenly">
-                <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
+                <h6 onclick="addToCart(2)">Add</h6>
               </div>
             </div>
           </div>
@@ -90,8 +90,8 @@
             </div>
             <div class="buy flex space-between">
               <p>$10</p>
+              <h6 onclick="addToCart(3)">Add</h6>
               <div id="book4" class="button flex space-evenly">
-                <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -105,7 +105,7 @@
             <div class="buy flex space-between">
               <p>$7.29</p>
               <div id="book5" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(4)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -119,7 +119,7 @@
             <div class="buy flex space-between">
               <p>$4.99</p>
               <div id="book6" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(5)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -140,7 +140,7 @@
             <div class="buy flex space-between">
               <p>$17.49</p>
               <div id="game1" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(6)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -154,7 +154,7 @@
             <div class="buy flex space-between">
               <p>$19.99</p>
               <div id="game2" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(7)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -168,7 +168,7 @@
             <div class="buy flex space-between">
               <p>$20.99</p>
               <div id="game3" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(8)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -182,7 +182,7 @@
             <div class="buy flex space-between">
               <p>$19.49</p>
               <div id="game4" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(9)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -203,7 +203,7 @@
             <div class="buy flex space-between">
               <p>$12.49</p>
               <div id="craft1" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(10)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -217,7 +217,7 @@
             <div class="buy flex space-between">
               <p>$19.99</p>
               <div id="craft2" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(11)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -231,7 +231,7 @@
             <div class="buy flex space-between">
               <p>$15.99</p>
               <div id="craft3" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(12)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -245,7 +245,7 @@
             <div class="buy flex space-between">
               <p>$18.49</p>
               <div id="craft4" class="button flex space-evenly">
-                <h6>Add</h6>
+                <h6 onclick="addToCart(13)">Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
@@ -267,6 +267,6 @@
       </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
